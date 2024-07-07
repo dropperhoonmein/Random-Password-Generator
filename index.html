@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Generate a</h1>
+      <h1 class="htext">Random Password</h1>
+    </header>
+    <div class="passbox">
+      <input type="text" id="pass">
+      <img src="copy.jpg" alt="" onclick="copytxt()">
+    </div>
+    <div class="btnbox">
+      <button id="gen" onclick="ranpass()">Generate</button>
+      <button id="copy">View Copied</button>
+    </div>
+  </div>
+  <div class="copiedbox remove" id="copiedbox">
+    <h1>Copied Passwords</h1>
+    <div id="copiedsbox" class="copiedsbox">
+      <p id="defaultTxt">No Copied Passwords</p>
+    </div>
+    <button class="closeBtn" id="closeBtn">Close</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

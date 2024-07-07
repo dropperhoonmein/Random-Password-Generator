@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #00203A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+h1 {
+    color: white;
+    margin: 25px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+
+.htext {
+    color: #008A52;
+    border-bottom: 3px solid #008A52;
+    font-size: 32px;
+    font-weight: 800;
+    width: 270px;
+    margin: 0;
+}
+
+
+
+
+
+.container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* display: none; */
+}
+
+.copiedbox {
+    width: 40%;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: scroll;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+}
+
+.copiedsbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+
+}
+
+.copiedbox::-webkit-scrollbar {
+    width: 5px;
+}
+
+.copiedbox::-webkit-scrollbar-track {
+    width: 5px;
+}
+
+.copiedbox::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+.copiedbox h1 {
+    color: black;
+}
+
+.copiedsbox div {
+    display: flex;
+    margin: auto;
+    padding: 15px;
+    width: 90%;
+    justify-content: space-around;
+    text-align: left;
+
+}
+
+.copiedbox div button {
+    width: 100px;
+}
+
+.copiedbox p {
+    margin: 10px auto;
+}
+
+/* .closeBtn{
+    background-color:#272e5a;
+} */
+.remove {
+    top: -1000px;
+}
+
+.passbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    margin: 25px 0px;
+    border-radius: 7px;
+    padding-left: 7px;
+    background-color: white;
+}
+
+.passbox input {
+    width: 85%;
+    padding: 15px;
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.passbox input:focus {
+    outline: none;
+}
+
+img {
+    width: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+button {
+    background-color: #008450;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    width: 250px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+
+.btnbox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+button:focus {
+    outline: none;
+}
+
+#defaultTxt {
+    margin: 100px auto;
+}
+
+.closeBtn {
+    margin: 10px auto;
+    margin-top: 25px
+}
+
+.copiedsbox p {
+    margin-left: 25px;
+}
+
+/* responsive */
+@media (max-width:1315px) {
+
+    .btnbox button,
+    .closeBtn {
+        width: 225px;
+    }
+
+    .passbox input {
+        padding: 13px;
+    }
+}
+
+@media (max-width:1150px) {
+
+    .btnbox button,
+    .closeBtn {
+        width: 200px;
+    }
+
+    .passbox input {
+        padding: 10px;
+    }
+}
+
+@media (max-width:1050px) {
+
+    .btnbox button,
+    .closeBtn {
+        width: 175px;
+    }
+
+}
+
+@media (max-width:930px) {
+
+    .container,
+    .copiedbox {
+        width: 50%;
+    }
+}
+
+@media (max-width:730px) {
+
+    .container,
+    .copiedbox {
+        width: 60%;
+    }
+}
+
+@media (max-width:600px) {
+
+    .container,
+    .copiedbox {
+        width: 70%;
+    }
+}
+
+@media (max-width:515px) {
+
+    .container,
+    .copiedbox {
+        width: 80%;
+        height: 450px;
+    }
+
+    .copiedsbox div {
+        width: 100%;
+    }
+}
+
+@media (max-width:460px) {
+
+    .container,
+    .copiedbox {
+        width: 85%;
+        height: 475px;
+    }
+}
+
+@media (max-width:427px) {
+    .passbox input {
+        padding: 9px;
+        font-size: 20px;
+    }
+
+    .btnbox button,
+    .closeBtn {
+        width: 150px;
+    }
+
+    .passbox {
+        margin: 22px 0px;
+    }
+    .container,
+    .copiedbox {
+        height: 490px;
+    }
+
+}
+
+@media (max-width:365px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    header {
+        margin: 25px;
+    }
+
+    .btnbox button,
+    .closeBtn {
+        width: 125px;
+    }
+
+    .htext {
+        font-size: 30px;
+        width: 253px;
+    }
+
+    .copiedsbox p {
+        margin-left: 0px;
+    }
+
+    .copiedbox div button {
+        width: 79px;
+    }
+    .container,
+    .copiedbox {
+        width: 85%;
+        height: 500px;
+    }
+}
+
+@media (max-width:305px) {
+
+    .container,
+    .copiedbox {
+        width: 90%;
+    }
+}
