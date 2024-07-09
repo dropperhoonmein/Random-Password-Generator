@@ -13,7 +13,6 @@ let i = 0
 console.log(i)
 let p = 0
 
-
 /// getting data from local storage
 i = parseInt(localStorage.getItem("iValue"))
 if (isNaN(i)) {
@@ -28,9 +27,6 @@ if (isNaN(i)) {
         xyz(p)
     }
 }
-
-
-
 
 ///functions 
 function xyz(a) {
@@ -76,12 +72,6 @@ function copytxt() {
     }
 }
 
-
-
-
-
-
-
 ///// copied passwords
 closeBtn.addEventListener("click", function () {
     copiedBox.classList.add("remove")
@@ -89,12 +79,3 @@ closeBtn.addEventListener("click", function () {
 copy.addEventListener("click", function () {
     copiedBox.classList.remove("remove")
 })
-
-
-
-
-
-
-
-
-console.log("last line")
